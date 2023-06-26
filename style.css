@@ -1,0 +1,68 @@
+/*Todo lo de header etc*/
+/*Todo lo de los formularios*/
+.alinear{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.mensaje_largo{
+    margin: 20px 0;
+}
+.cajitas{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.caja_contenedora{
+    display: inline-block;
+}
+.minicaja{
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    margin: 3px;
+    padding: 25px;
+    border: 1.5px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.estudiante{
+    border-color: blue;
+}
+.trainee{
+    border-color: purple;
+}
+.junior{
+    border-color: darkorange;
+}
+.caja_formulario{
+    width: 80%;
+}
+.completar_compra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.tamaño{
+    width: 50%;
+}
+.vista_form{
+    appearance: auto;
+}
+.contenedor_total{
+    height: 50px;
+    background: #bbe7bd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin: 10px 0; 
+}
+.form_botones{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}

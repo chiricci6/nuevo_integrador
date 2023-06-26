@@ -1,0 +1,162 @@
+<!doctype HTML>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Integrador</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <nav> <!--Barra de navegacion-->
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Los Oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Conviertete en orador</a> <!--que te tire a la parte del forms-->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Comprar Tikets</a> <!--Parte de la compra-->
+            </li>
+          </ul>
+    </nav>
+    <br><br>
+    <main><!--Main-->
+        <!--Aca va la foto del palacio del agua junto con el texto y dos botones para ser orador (forms) y comprar tikets (java)-->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="hawaii.jpg" class="d-block w-100" alt="...">
+                <div class="container">
+                    <div class="carousel-caption"> <!--Descripcion-->
+                      <h2>Conferencia Buenos Aires</h2>
+                      <p>Ba As llega por primera vez a Argentina. Un evento para comparit con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de internet. Ven a conocer a los miembros del evento, a otros estudiande de Codo a Codo y los oradores de primer nivel que tenbemos para ti. Te esperamos!</p>
+                      <div class="buttons-container">
+                        <a class="btn btn-outline-light" href="#">Quiero ser orador</a> <!--Llevar al forms-->
+                        <a class="btn btn-primary" href="#">Comprar Tikets</a> <!--Llevar a comprar-->
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+    </main>
+    <br><br>
+    <section> <!--Seccion-->
+        <!--Aca van los ordores, son 3 en total y el buenos aires en octubre-->
+        <div class="container"> <!--Los diferentes oradores-->
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="steve.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Steve Jobs</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="bill.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Bill Gates</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="ada.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ada Lovelace</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+    </section>
+    <br><br>
+    <footer>
+        <!--Aca va el forms de oradores + comprar tikets-->
+        <form action=""> <!--Formulario-->
+            <div class="alinear">
+                <input type="text" class="form-control" placeholder="Nombre">
+                <input type="text" class="form-control" placeholder="Apellido">
+            </div>
+            <div class="mensaje_largo">
+                <textarea type="textarea" class="form-control" placeholder="De que queres hablar"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button> <!--Para enviar el formulario-->
+        </form>
+        <div class="para_comprar"> <!--Aca me tienen q dejar los "links"-->
+            <div class="cajitas">
+                <div class="caja_contenedora">
+                  <div class="minicaja estudiante"> <!--Caja estudiante-->
+                    <h5>Estudiante</h5>
+                    <p>Tienen un descuento</p>
+                    <p><strong>80%</strong></p>
+                  </div>
+                </div>
+                <div class="caja_contenedora">
+                  <div class="minicaja trainee"> <!--Caja trainee-->
+                    <h5>Trainee</h5>
+                    <p>Tienen un descuento</p>
+                    <p><strong>50%</strong></p>
+                  </div>
+                </div>
+                <div class="caja_contenedora">
+                  <div class="minicaja junior"> <!--Caja Junior-->
+                    <h5>Junior</h5>
+                    <p>Tienen un descuento</p>
+                    <p><strong>15%</strong></p>
+                  </div>
+                </div>
+            </div>
+            <div class="caja_formulario">
+                <h4>Comprar tickets</h4>
+                <form action="" onsubmit="event.preventDefault();"> <!--Formulario-->
+                  <div class="completar_compra">
+                    <input type="text" class="form-control medimum" placeholder="Nombre">
+                    <input type="text" class="form-control medimum" placeholder="Apellido">
+                    <input type="email" class="form-control" placeholder="Correo electrónico">
+                    <div class="tamaño">
+                      <p>Cantidad</p> <!--Cantidad de tickets-->
+                      <input type="number" name="quantity" id="quantity" class="form-control" placeholder="Máximo 10 tickets"
+                        min="1" max="10" value="1">
+                    </div>
+                    <div class="tamaño">
+                      <p>Promoción</p> <!--Para la promo-->
+                      <select name="promotion" id="promotion" class="vista_form">
+                        <option value="none">-</option>
+                        <option value="student">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
+                      </select>
+                    </div>
+                </div>
+                  <div class="contenedor_total">
+                    <p>Total a pagar: <span id="price">$0</span></p>
+                  </div>
+                  <div class="form_botones">
+                    <button id="reset" class="btn btn-primary ticket-btn">Restablecer</button>
+                    <button id="resume" class="btn btn-primary ticket-btn">Resumen</button>
+                  </div>
+                </form>
+        
+              </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
