@@ -1,4 +1,9 @@
 /*Todo lo de header etc*/
+body{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 /*Todo lo de los formularios*/
 .alinear{
     display: inline-flex;
