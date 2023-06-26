@@ -41,9 +41,6 @@ body{
 .junior{
     border-color: darkorange;
 }
-.caja_formulario{
-    width: 80%;
-}
 .completar_compra{
     display: flex;
     flex-wrap: wrap;
