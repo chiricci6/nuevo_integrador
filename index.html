@@ -11,23 +11,22 @@
         
     </header>
     <nav> <!--Barra de navegacion-->
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Los Oradores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">El lugar y la fecha</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Conviertete en orador</a> <!--que te tire a la parte del forms-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="">Comprar Tikets</a> <!--Parte de la compra-->
-            </li>
-          </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Conf Bs AS</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Los oradores</a>
+                  <a class="nav-link" href="#">Lugar y fecha</a>
+                  <a class="nav-link" href="#">Convertite en orador</a>
+                  <a class="nav-link" href="#">Comprar Tickets</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </nav>
     <br><br>
     <main><!--Main-->
@@ -89,6 +88,8 @@
     <br><br>
     <footer>
         <!--Aca va el forms de oradores + comprar tikets-->
+        <h4>Convertite en orador</h4>
+        <br>
         <form action=""> <!--Formulario-->
             <div class="alinear">
                 <input type="text" class="form-control" placeholder="Nombre">
@@ -99,6 +100,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Enviar mensaje</button> <!--Para enviar el formulario-->
         </form>
+        <br><br>
         <div class="para_comprar"> <!--Aca me tienen q dejar los "links"-->
             <div class="cajitas">
                 <div class="caja_contenedora">
@@ -124,6 +126,7 @@
                 </div>
             </div>
             <div>
+                <br>
                 <h4>Comprar tickets</h4>
                 <form action="" onsubmit="event.preventDefault();"> <!--Formulario-->
                   <div class="completar_compra">
