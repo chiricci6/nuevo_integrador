@@ -5,6 +5,7 @@ body{
     margin-right: 50px;
     margin-top: 25px;
     margin-bottom: 25px;
+    background-color: #e6dcf0;
 }
 /*Todo lo de los formularios*/
 .alinear{
@@ -57,7 +58,7 @@ body{
 }
 .contenedor_total{
     height: 50px;
-    background: #bbe7bd;
+    background: #cfb3f6;
     border-radius: 5px;
     display: flex;
     align-items: center;
